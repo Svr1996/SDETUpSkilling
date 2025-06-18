@@ -21,15 +21,17 @@ public class TernaryOperator {
         System.out.println("\nGenerated XPath: " + dynamicXPath);
 
 
-//        String s1 = "Get started";
-//        String s2 = "you are in.. start exploring";
-//        boolean check = false;
+        String s1 = "Get started";
+        String s2 = "you are in.. start exploring";
+        boolean check = true;
 //
-//        if(check==true){
-//            System.out.println(String.format("//div[text()='%s']",s1));
-//        }else{
-//            System.out.println(String.format("//div[text()='%s']",s2));
-//        }
+        if(check){
+            //check==false
+            //check==true
+            System.out.println(String.format("//div[text()='%s']",s1));
+        }else{
+            System.out.println(String.format("//div[text()='%s']",s2));
+        }
 
     }
 }

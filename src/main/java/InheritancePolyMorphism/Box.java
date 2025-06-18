@@ -1,7 +1,9 @@
-package Inheritance;
+package InheritancePolyMorphism;
 
 public class Box {
 
+    //anything which is declared as private can' be accessed in child class
+    private double num ;
     double length;
     double width;
     double height;
@@ -23,6 +25,11 @@ public class Box {
         this.length = old.length;
         this.width = old.width;
         this.height = old.height;
+    }
+
+    //this is demo fot static methods
+    static void greetings(){
+        System.out.println("I'm in Box");
     }
 
 
