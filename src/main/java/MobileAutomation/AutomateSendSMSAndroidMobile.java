@@ -32,7 +32,7 @@ public class AutomateSendSMSAndroidMobile {
 
         wait.until(ExpectedConditions.visibilityOf(androidDriver.findElement(By.xpath("//android.widget.EditText[@resource-id=\"ContactSearchField\"]")))).sendKeys("7795099861");
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.TextView[@text=\"+917795099861\"]"))).click();
-        System.out.println("clicked on phone number");
+
         By messageBoxLocator = By.id("com.google.android.apps.messaging:id/compose_message_text");
 
 // Wait for the element to be clickable using the locator
