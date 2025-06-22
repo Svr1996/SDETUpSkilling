@@ -20,6 +20,6 @@
             <artifactId>java-client</artifactId>
             <version>9.3.0</version>
         </dependency>
-
+<!--        Since Appium as inbuilt selenium libraries no need to explictly add selenium libraries-->
     </dependencies>
 </project>
