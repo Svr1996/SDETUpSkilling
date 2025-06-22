@@ -1,0 +1,49 @@
+ Run command in windows power shell -> Run as administrator ->choco install ngrok
+ check whether it is installed - ngrok version
+
+get this from ngrok app  -signup and go to yourtoken you will get ther
+ngrok config add-authtoken $YOUR_AUTHTOKEN
+
+
+ Start ngrok for Jenkins in terminal
+
+If Jenkins is running locally on port 8080, open a new terminal and run:
+ ngrok http 8080
+
+This will generate an HTTPS public URL like:
+Copy that add it in git hub repo web hook
+
+
+2. In Jenkins: Enable GitHub webhook trigger
+Go to your Jenkins job (Pipeline or Freestyle).
+
+Click Configure.
+
+Scroll to Build Triggers.
+
+✅ Check GitHub hook trigger for GITScm polling.
+
+Save.
+
+
+
+
+3. In GitHub: Add webhook
+Go to your GitHub repo.
+
+Navigate to Settings → Webhooks → Add webhook.
+
+Fill:
+
+Payload URL:
+
+bash
+Copy
+Edit
+https://abc123.ngrok.io/github-webhook/
+Content type: application/json
+
+Events: Choose Just the push event
+
+Click Add webhook.
+
