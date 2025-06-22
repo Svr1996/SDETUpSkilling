@@ -27,10 +27,10 @@ public class GetDynamicPassword {
         // this will split the password into two strings and stored in an array
         // "Please use temporary password 'rahulshettyacademy' to Login."
         String[] passtext = text.split("'");
-        String password = passtext[1].split("'")[0];
+
 
         driver.findElement(By.cssSelector("input#inputUsername")).sendKeys("Sandeep");;
-        driver.findElement(By.cssSelector("input[name='inputPassword']")).sendKeys(password);
+        driver.findElement(By.cssSelector("input[name='inputPassword']")).sendKeys(passtext[1]);
         driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.id("chkboxTwo")).click();
         driver.findElement(By.xpath("//button[contains(@class,'submit ')]")).click();

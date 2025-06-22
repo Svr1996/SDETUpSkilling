@@ -1,4 +1,4 @@
-package SeleniumBasic;
+package E2EUiElementstesting;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +26,7 @@ public class NewDropdown {
          }
          driver.findElement(By.id("btnclosepaxoption")).click();
         System.out.println(dropdown.getText());
+
 
 
 

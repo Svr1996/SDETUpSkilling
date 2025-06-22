@@ -1,4 +1,4 @@
-package SeleniumBasic;
+package E2EUiElementstesting;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.ArrayList;
+import java.util.List;
 
 public class StaticDropdowns {
 
@@ -35,6 +35,30 @@ public class StaticDropdowns {
         System.out.println(select.getFirstSelectedOption().getText());
 //        ArrayList<WebElement> list = new ArrayList<>(select.getOptions());
         ;
+
+        //count the number of options available in the Select dropdown
+
+        int count = select.getOptions().size();
+        System.out.println("number of options available in the doprdown " +count);
+
+        //How to get all the options available in the dropdown
+        List<WebElement> list = select.getOptions();
+
+        //another way to print the count
+        System.out.println(list.size());
+
+
+        for(WebElement options : list){
+            System.out.println(options.getText());
+
+            if(options.getText().equalsIgnoreCase("USD")){
+                options.click();
+                break;
+            }
+
+
+        }
+
 
 
     }
