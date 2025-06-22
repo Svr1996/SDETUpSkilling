@@ -17,11 +17,11 @@ public class WorkingClass {
         uiAutomator2Options.setApp("D:\\Mobile Automation\\Sample APKS For Testing Purpose\\ApiDemos-debug.apk");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"),uiAutomator2Options);
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
-        alert.sendKeys("Text");
-        alert.dismiss();
-        alert.getText();
+//        Alert alert = driver.switchTo().alert();
+//        alert.accept();
+//        alert.sendKeys("Text");
+//        alert.dismiss();
+//        alert.getText();
 
 
 

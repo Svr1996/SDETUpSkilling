@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DragAndDrop {
     public static void main(String[] args) throws MalformedURLException {
-        AndroidDriver driver = DriverClass.getAndroidDriverForRealDevice();
+        AndroidDriver driver = DriverClass.getAndroidDriverForEmulator();
         // ✅ Corrected way to find elements using AppiumBy
         driver.findElement(AppiumBy.accessibilityId("Views")).click();
         driver.findElement(AppiumBy.accessibilityId("Drag and Drop")).click();
