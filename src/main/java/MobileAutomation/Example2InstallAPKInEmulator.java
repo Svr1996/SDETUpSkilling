@@ -12,15 +12,16 @@ import java.net.URL;
 public class Example2InstallAPKInEmulator {
     public static void main(String[] args) throws MalformedURLException {
         // MobileCapabilityType is deprecated from 8.0 version in appium java client
+//        AndroidDriver driver = DriverClass.getAndroidDriverForEmulator();
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
         options.setDeviceName("emulator-5554");
-//        options.setDeviceName("13978139200009S");
-        options.setApp("D:\\Mobile Automation\\Sample APKS For Testing Purpose\\TheApp.apk");
+        options.setApp("D:\\Mobile Automation\\Sample APKS For Testing Purpose\\ApiDemos-debug.apk");
         options.setAutomationName("UiAutomator2");
         options.setPlatformVersion("16");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+        System.out.println("Test ended");
         driver.quit();
 
     }

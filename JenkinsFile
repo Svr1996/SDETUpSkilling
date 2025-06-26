@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('QA'){
+            steps{
+                git 'https://github.com/Rupesh145/SDETUpSkilling.git'
+            }
+        }
+
+        stage('DEV'){
+            steps{
+                git 'https://github.com/Rupesh145/SDETUpSkilling.git'
+            }
+         }
+    }
+}
