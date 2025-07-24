@@ -4,7 +4,7 @@
     <test name="Regression Test">
         <classes>
             <class name="com.dat.qa.testcases.LoginPageTest"/>
-
+            <class name="com.dat.qa.testcases.DemoTest"/>
         </classes>
     </test>
 </suite>
