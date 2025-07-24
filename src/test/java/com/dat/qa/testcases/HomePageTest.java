@@ -34,7 +34,7 @@ public class HomePageTest extends TestBase {
         Thread.sleep(4000);
     }
 
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1, enabled = true)
     public void verifyHomePageTitleTest() {
         String title = homepage.verifyHomePageTitle();
         Assert.assertEquals(title, "CRMPRO", "Invalid page title returned");
@@ -46,7 +46,7 @@ public class HomePageTest extends TestBase {
         homepage.verifyUsername();
     }
 
-    @Test (priority =3, enabled = false)
+    @Test (priority =3, enabled = true)
     public void VerifyConatatsClickTest() {
         contactspage = homepage.clickonContactslink();
 
