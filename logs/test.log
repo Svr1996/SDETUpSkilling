@@ -1,0 +1,47 @@
+15:46:30.808 [main] INFO  com.datapi.Listeners.TestListeners - Test Suite started
+15:46:30.842 [main] INFO  com.datapi.Listeners.TestListeners - Test started!! loginTest
+15:46:30.842 [main] INFO  com.datapi.Listeners.TestListeners - Test description!! verify login API test is working fine
+15:46:32.656 [main] INFO  com.datapi.Listeners.TestListeners - Test Passed!! loginTest
+15:46:32.656 [main] INFO  com.datapi.Listeners.TestListeners - Test description!! verify login API test is working fine
+15:46:32.661 [main] INFO  com.datapi.Listeners.TestListeners - Test Suite Completed
+17:04:07.253 [main] INFO  com.datapi.Listeners.TestListeners - Test Suite started
+17:04:07.318 [main] INFO  com.datapi.Listeners.TestListeners - Test started!! loginTest
+17:04:07.320 [main] INFO  com.datapi.Listeners.TestListeners - Test description!! verify login API test is working fine
+17:04:08.884 [main] INFO  com.datapi.Filters.LoggingFilter - ➡️ Request URI     : http://64.227.160.186:8080/api/auth/login
+17:04:08.886 [main] INFO  com.datapi.Filters.LoggingFilter - ➡️ Request Method  : POST
+17:04:08.887 [main] INFO  com.datapi.Filters.LoggingFilter - ➡️ Request Headers : Accept=*/*
+Content-Type=application/json
+17:04:08.888 [main] INFO  com.datapi.Filters.LoggingFilter - ➡️ Request Body    : {"username":"SMTest","password":"Test@1234"}
+17:04:10.187 [main] INFO  com.datapi.Filters.LoggingFilter - ⬅️ Status Code     : 200
+17:04:10.188 [main] INFO  com.datapi.Filters.LoggingFilter - ⬅️ Response Headers: Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 28 Jul 2025 11:34:15 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+17:04:10.262 [main] INFO  com.datapi.Filters.LoggingFilter - ⬅️ Response Body   : {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJTTVRlc3QiLCJpYXQiOjE3NTM3MDI0NTUsImV4cCI6MTc1MzcwNjA1NX0.BJW6_cDgA2dXHabXxLS1OTuaSqTK8SaJN0jOhhxgrEg",
+    "type": "Bearer",
+    "id": 2215,
+    "username": "SMTest",
+    "email": "SMtest@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+17:04:10.371 [main] INFO  com.datapi.Listeners.TestListeners - Test Passed!! loginTest
+17:04:10.371 [main] INFO  com.datapi.Listeners.TestListeners - Test description!! verify login API test is working fine
+17:04:10.383 [main] INFO  com.datapi.Listeners.TestListeners - Test Suite Completed
